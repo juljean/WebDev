@@ -1,0 +1,16 @@
+@import 'sources/styles/mixins.scss';
+
+.contentWrapper {
+  @include flex(flex-start, space-between);
+  .link { 
+    @include text-style(20px, $color: #ffffff);
+     
+    cursor: pointer;
+  }
+  .button {
+    height: fit-content;
+    padding: 15px;
+    @include text-style(20px, $color: #ffffff);
+    text-decoration: underline !important;
+}
+}

@@ -1,0 +1,25 @@
+@import './../../sources/styles/mixins.scss';
+
+.avatarContainer {
+    position: relative;
+   
+    padding: 5px 10px;
+
+    .image {
+        @include width-height(75px, 100px);
+    }
+
+    .statusHolder {
+        @include width-height(28px, 28px);
+        @include position-absolute($left: -10px, $bottom: -10px);
+        @include flex(center, center);
+        border-radius: 50%;
+        background-color: $pageBackground;
+
+        .status {
+            @include width-height(12px, 12px);
+            border-radius: 50%;
+            background-color: #51CC73;
+        }
+    }
+}

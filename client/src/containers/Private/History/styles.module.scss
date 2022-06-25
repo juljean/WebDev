@@ -1,0 +1,15 @@
+@import 'sources/styles/mixins.scss';
+
+.wrapper { 
+    @include text-style(20px);
+    .image { 
+        float: left;
+        margin-right: 20px;
+    }
+
+   /*  .image { 
+       float: ;
+    } */
+
+     
+}
